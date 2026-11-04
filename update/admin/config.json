@@ -1,0 +1,66 @@
+{
+    "Version": "12",
+    "AppName": "ConnectPlus",
+    "ReleaseNotes": "Ola novas credenciais do APK...",
+    "UrlUpdate": "https://painel.cybercoari.com.br/api/config.php?token=58fx7pCeBKVfgFEC7SKiUyx7",
+    "Sms": "https://painel.cybercoari.com.br/api/sms.php?token=EJXtz8hwGLpdUZftWzVyptoR",
+    "logoonline": "https://cybercoari.com.br/cyber/imagens/logoonline.png",
+    "fundoonline": "https://cybercoari.com.br/cyber/imagens/fundoonline.png",
+    "logonline": "https://cybercoari.com.br/cyber/imagens/logonline.png",
+    "rodapeonline": "https://cybercoari.com.br/cyber/imagens/rodapeonline.png",
+    "EmailFeedback": "admin@cybercoari.com.br",
+    "UrlContato": "",
+    "UrlTermos": "",
+    "CheckUser": "true",
+    "CorBordaCampo": "#FF0000",
+    "CorIconeUsuario": "#FF0000",
+    "CorIconeSenha": "#0000FF",
+    "CorBotaoStart": "#0000FF",
+    "CorBordaBotaoStart": "#FF0000",
+    "CorFonteBotaoStart": "#00FFFF",
+    "CorTituloApp": "#FF00BAFF",
+    "CorStatus": "#FFFFFFFF",
+    "CorTextoVersao": "#FFFFFFFF",
+    "CorNumeroVersao": "#FF00FF00",
+    "CorIP": "#FF00FF00",
+    "CorOperadora": "#FF00FF00",
+    "CorIconeAtualizar": "#FF00DE0C",
+    "EspessuraBordaCampo": 0,
+    "Udp": [
+        {
+            "Porta": "7300"
+        },
+        {
+            "Porta": "7400"
+        },
+        {
+            "Porta": "7500"
+        }
+    ],
+    "UdpPort": "7300;7400;7500",
+    "Servers": [
+        {
+            "Name": "TIM",
+            "TYPE": "DIRECT",
+            "FLAG": "https://cybercoari.com.br/cyber/imagens/tim.png",
+            "ServerIP": "app.cybercoari.app.br",
+            "CheckUser": "",
+            "ServerPort": "443",
+            "SSLPort": "443",
+            "USER": "",
+            "PASS": ""
+        }
+    ],
+    "Networks": [
+        {
+            "Name": "Tim",
+            "FLAG": "https://cybercoari.com.br/cyber/imagens/tim.png",
+            "Payload": "",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "162.247.241.4#179.191.168.33#179.191.168.41#179.191.168.17#179.191.168.57#179.191.168.73#179.191.168.65#179.191.168.49#179.191.169.57",
+            "ProxyPort": "443",
+            "Info": "Tlsws"
+        }
+    ]
+}

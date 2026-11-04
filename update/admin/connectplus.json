@@ -1,0 +1,30 @@
+{
+    "Version": "2",
+    "Update": "https://painel.cybercoari.com.br/update/admin/connectplus.json",
+    "UdpPort": "7300",
+    "Contato": "https://wa.me/5597981187297",
+    "Site": "https://cybercoari.com.br",
+    "Servers": [
+        {
+            "Name": "TIM",
+            "ColorName": "#ffffff",
+            "Description": "T1M 01",
+            "ColorDescription": "#ffffff",
+            "TYPE": "DIRECT",
+            "FLAG": "https://cybercoari.com.br/cyber/imagens/tim.png",
+            "ServerIP": "app.cybercoari.app.br",
+            "CheckUser": "",
+            "ServerPort": "443",
+            "SSLPort": "443",
+            "USER": "",
+            "PASS": "",
+            "Payload": "GET / HTTP/1.1[lf]Host: ln.centraldacdn.com[lf]Upgrade: websocket[lf][lf]#GET / HTTP/1.1[lf]Host: ln.centraldacdn.com[lf]Upgrade: websocket[lf][lf]",
+            "ProxyIP": "",
+            "ProxyPort": "",
+            "SNI": "",
+            "Path": "",
+            "Color": "#0000ff",
+            "Info": "Direct"
+        }
+    ]
+}

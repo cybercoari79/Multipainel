@@ -1,0 +1,6 @@
+config.php
+.env
+database.sql
+*.bak
+backups/
+uploads/

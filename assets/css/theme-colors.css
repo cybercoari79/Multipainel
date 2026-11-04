@@ -1,0 +1,146 @@
+/* ============================================================
+   CORES GERADAS PELO TEMA.PHP
+   NÃO EDITE ESTE ARQUIVO MANUALMENTE
+   ============================================================ */
+
+:root {
+
+    /* Cores gerais */
+    --theme-color-one: #00000000;
+    --theme-color-two: #333333;
+    --theme-color-starter: #FF0000;
+    --theme-color-dialogs: #FFFFFF;
+    --theme-color-buttons: #FF0000;
+
+    /* Botão Primário */
+    --button-primary: #667eea;
+    --button-primary-hover: #5b6ee1;
+
+    /* Botão Secundário */
+    --button-secondary: #6b7280;
+    --button-secondary-hover: #4b5563;
+
+    /* Botão Sucesso */
+    --button-success: #16a34a;
+    --button-success-hover: #15803d;
+
+    /* Botão Perigo */
+    --button-danger: #dc2626;
+    --button-danger-hover: #b91c1c;
+
+    /* Botão Aviso */
+    --button-warning: #f59e0b;
+    --button-warning-hover: #d97706;
+
+    /* Botão Informação */
+    --button-info: #0ea5e9;
+    --button-info-hover: #0284c7;
+
+    /* Texto dos botões */
+    --button-text: #ffffff;
+
+    /* Compatibilidade */
+    --primary: #667eea;
+    --primary-hover: #5b6ee1;
+
+    --success: #16a34a;
+    --danger: #dc2626;
+    --warning: #f59e0b;
+    --info: #0ea5e9;
+}
+
+/* ============================================================
+   BOTÕES
+   ============================================================ */
+
+.btn-primary,
+button.btn-primary,
+a.btn-primary {
+    background: var(--button-primary);
+    color: var(--button-text);
+}
+
+.btn-primary:hover,
+button.btn-primary:hover,
+a.btn-primary:hover {
+    background: var(--button-primary-hover);
+}
+
+.btn-secondary,
+button.btn-secondary,
+a.btn-secondary {
+    background: var(--button-secondary);
+    color: var(--button-text);
+}
+
+.btn-secondary:hover,
+button.btn-secondary:hover,
+a.btn-secondary:hover {
+    background: var(--button-secondary-hover);
+}
+
+.btn-success,
+button.btn-success,
+a.btn-success {
+    background: var(--button-success);
+    color: var(--button-text);
+}
+
+.btn-success:hover,
+button.btn-success:hover,
+a.btn-success:hover {
+    background: var(--button-success-hover);
+}
+
+.btn-danger,
+button.btn-danger,
+a.btn-danger {
+    background: var(--button-danger);
+    color: var(--button-text);
+}
+
+.btn-danger:hover,
+button.btn-danger:hover,
+a.btn-danger:hover {
+    background: var(--button-danger-hover);
+}
+
+.btn-warning,
+button.btn-warning,
+a.btn-warning {
+    background: var(--button-warning);
+    color: var(--button-text);
+}
+
+.btn-warning:hover,
+button.btn-warning:hover,
+a.btn-warning:hover {
+    background: var(--button-warning-hover);
+}
+
+.btn-info,
+button.btn-info,
+a.btn-info {
+    background: var(--button-info);
+    color: var(--button-text);
+}
+
+.btn-info:hover,
+button.btn-info:hover,
+a.btn-info:hover {
+    background: var(--button-info-hover);
+}
+
+/* Botão laranja antigo */
+.btn-orange,
+button.btn-orange,
+a.btn-orange {
+    background: var(--button-warning);
+    color: var(--button-text);
+}
+
+.btn-orange:hover,
+button.btn-orange:hover,
+a.btn-orange:hover {
+    background: var(--button-warning-hover);
+}

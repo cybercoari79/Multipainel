@@ -1,0 +1,10 @@
+<?php
+declare(strict_types=1);
+require_once __DIR__ . '/../includes/bootstrap.php';
+require_once __DIR__ . '/helpers.php';
+requireLogin();
+function c4e($v): string { return htmlspecialchars((string)($v ?? ''), ENT_QUOTES|ENT_SUBSTITUTE, 'UTF-8'); }
+function c4back(string $file): void { header('Location: '.appUrl('/c4gmod/'.$file)); exit; }
+if($_SERVER['REQUEST_METHOD']==='POST'){c4gmod_check_csrf();$id=(int)($_POST['id']??0);if(isset($_POST['delete']))$pdo->prepare("DELETE FROM c4gmod_udp WHERE id=?")->execute([$id]);else{$porta=trim((string)($_POST['porta']??''));if($id)$pdo->prepare("UPDATE c4gmod_udp SET porta=? WHERE id=?")->execute([$porta,$id]);else $pdo->prepare("INSERT INTO c4gmod_udp(porta) VALUES(?)")->execute([$porta]);}c4back('udp.php');}$rows=$pdo->query("SELECT * FROM c4gmod_udp ORDER BY sort_order,id")->fetchAll();$pageTitle='C4GMOD - UDP';$activePage='c4g';?>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UDP C4GMOD</title>
+<link rel="stylesheet" href="<?=c4e(appUrl('/assets/css/style.css'))?>"></head><body><div class="dashboard"><?php require __DIR__.'/../includes/menu.php';?><main class="main-content"><?php require __DIR__.'/../includes/header.php';?><div class="container-form"><h1>UDP <span>C4GMOD</span></h1><form method="post"><input type="hidden" name="csrf" value="<?=c4e(c4gmod_csrf_token())?>"><label>Porta</label><input name="porta" required><button class="btn">Adicionar</button></form><div class="table-container" style="margin-top:20px"><table><tr><th>Porta</th><th>Ação</th></tr><?php foreach($rows as $r):?><tr><td><?=c4e($r['porta'])?></td><td><form method="post"><input type="hidden" name="csrf" value="<?=c4e(c4gmod_csrf_token())?>"><input type="hidden" name="id" value="<?=$r['id']?>"><button class="btn btn-sm btn-delete" name="delete">Excluir</button></form></td></tr><?php endforeach;?></table></div></main></div></body></html>
